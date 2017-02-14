@@ -1,0 +1,19 @@
+<% include ../partials/head.ejs %>
+  <body>
+    <% include ../partials/header.ejs %>
+
+    <main>
+      <div class="container">
+        <h3>Hello, <%=  %> </h3>
+        <h4> Your current location is , <%=  %>  </h4>
+
+            <div id="map">
+              <input class="addinput" type="number" placeholder="Enter Your Address">
+              <button id="button" type="button">Get Weather</button>
+
+            </div>
+
+    <% include ../partials/map.ejs %>
+    <% include ../partials/footer.ejs %>
+  </body>
+</html>

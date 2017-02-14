@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+header {
+  font-family: 'Russo One', sans-serif;
+  color: white;
+  background-color: #66CC00
+}
+
+header .container h1 {
+  font-size: 36px;
+}
+
+main{
+  flex: 1 0 auto;
+}
+
+footer {
+  color: white;
+  background-color: #66CC00 ;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#dslogo{
+  height: 30px;
+  width: 30px:
+  float: right;
+}
+
+#gmlogo{
+  height: 30px;
+  width: 30px:
+  float: right;
+}
