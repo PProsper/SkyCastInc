@@ -4,16 +4,20 @@
 
     <main>
       <div class="container">
-        <h3>Hello, <%=  %> </h3>
-        <h4> Your current location is , <%=  %>  </h4>
+        <h4>Hello, <%= user.firstName %> </h4>
+        <h5> Your current location is , <%= user.timezone  %>  </h5>
 
             <div id="map">
-              <input class="addinput" type="number" placeholder="Enter Your Address">
-              <button id="button" type="button">Get Weather</button>
+
+            <form action="<%= '/address' + '?_method=PUT' %>" method="POST">
+              <input name="address" class="addinput" type="text" placeholder="Enter Your Address">
+              <button id="button" type="submit">Get Weather</button>
+            </form>
 
             </div>
 
     <% include ../partials/map.ejs %>
+    <% include ../partials/getLocation.ejs %>
     <% include ../partials/footer.ejs %>
   </body>
 </html>
